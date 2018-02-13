@@ -14,6 +14,7 @@ public class Demo
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.co.in/");
 		Reporter.log(driver.getTitle(),true);
+		Reporter.log(driver.getCurrentUrl(),true);
 		driver.close();
 	}
 }
